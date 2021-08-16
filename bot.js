@@ -17,7 +17,6 @@ app = async (click) => {
   await page.goto(url);
   await page.setCookie(cookie);
   let showcookie = await page.cookies(url);
-  console.log(showcookie);
 
   await delay(2000);
   console.log('ready!');
